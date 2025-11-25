@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="MauiApp1.MainPage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Padding="20">
+
+            <Grid ColumnDefinitions="Auto, *" ColumnSpacing="20">
+
+                <Border Grid.Column="0"
+                        Stroke="Purple"
+                        StrokeThickness="3"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="50" />
+                    </Border.StrokeShape>
+                    <Image Source="dotnet_bot.png" 
+                           Aspect="AspectFill"
+                           HeightRequest="100"
+                           WidthRequest="100"/>
+                </Border>
+
+                <Grid Grid.Column="1" ColumnDefinitions="*,*,*" VerticalOptions="Center">
+                    <VerticalStackLayout Grid.Column="0" HorizontalOptions="Center">
+                        <Label Text="9" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
+                        <Label Text="Posts" FontSize="12" TextColor="Gray" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Grid.Column="1" HorizontalOptions="Center">
+                        <Label Text="588M" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
+                        <Label Text="Followers" FontSize="12" TextColor="Gray" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <VerticalStackLayout Grid.Column="2" HorizontalOptions="Center">
+                        <Label Text="$22.6B" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black"/>
+                        <Label Text="Net Worth" FontSize="12" TextColor="Gray" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                </Grid>
+            </Grid>
+
+            <VerticalStackLayout Spacing="2">
+                <Label Text="Jungkook Jeon" FontAttributes="Bold" FontSize="16" TextColor="Black"/>
+                <Label Text="Members of BTS" TextColor="Gray" />
+                <Label Text="Account managed by @bighit_ent" TextColor="Purple" />
+            </VerticalStackLayout>
+
+            <toolkit:Expander>
+                <toolkit:Expander.Header>
+                    <VerticalStackLayout>
+                        <Label Text="Jeon Jung-kook (Korean: 전정국; born September 1, 1997), known mononymously as Jungkook..."
+                               LineBreakMode="TailTruncation"
+                               MaxLines="2" 
+                               TextColor="Black"/>
+                        <Label Text="Read More" 
+                               TextColor="Purple" 
+                               FontAttributes="Bold"
+                               Margin="0,5,0,0"/>
+                    </VerticalStackLayout>
+                </toolkit:Expander.Header>
+
+                <toolkit:Expander.Content>
+                    <Label Text="Jeon Jung-kook is a South Korean singer and songwriter. He is the youngest member and vocalist of the South Korean boy band BTS. He has released three solo tracks with BTS: 'Begin' in 2016, 'Euphoria' in 2018, and 'My Time' in 2020."
+                           TextColor="Black"
+                           Margin="0,10,0,0"/>
+                </toolkit:Expander.Content>
+            </toolkit:Expander>
+
+            <Grid ColumnDefinitions="*,*,*,*" Margin="0,10">
+                <VerticalStackLayout Grid.Column="0" Spacing="5">
+                    <Frame CornerRadius="30" HeightRequest="60" WidthRequest="60" Padding="0" IsClippedToBounds="True" BorderColor="LightGray">
+                        <Image Source="dotnet_bot.png" Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Text="Single#1" HorizontalOptions="Center" FontSize="10" TextColor="Black"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="1" Spacing="5">
+                    <Frame CornerRadius="30" HeightRequest="60" WidthRequest="60" Padding="0" IsClippedToBounds="True" BorderColor="LightGray">
+                        <Image Source="dotnet_bot.png" Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Text="Single#2" HorizontalOptions="Center" FontSize="10" TextColor="Black"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="2" Spacing="5">
+                    <Frame CornerRadius="30" HeightRequest="60" WidthRequest="60" Padding="0" IsClippedToBounds="True" BorderColor="LightGray">
+                        <Image Source="dotnet_bot.png" Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Text="Single#3" HorizontalOptions="Center" FontSize="10" TextColor="Black"/>
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="3" Spacing="5">
+                    <Frame CornerRadius="30" HeightRequest="60" WidthRequest="60" Padding="0" IsClippedToBounds="True" BorderColor="LightGray">
+                        <Image Source="dotnet_bot.png" Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Text="Single#4" HorizontalOptions="Center" FontSize="10" TextColor="Black"/>
+                </VerticalStackLayout>
+            </Grid>
+
+            <Grid RowDefinitions="120, 120, 120" ColumnDefinitions="*, *, *" RowSpacing="2" ColumnSpacing="2">
+
+                <Image Grid.Row="0" Grid.Column="0" Source="dotnet_bot.png" Aspect="AspectFill" BackgroundColor="LightPink"/>
+                <Image Grid.Row="0" Grid.Column="1" Source="dotnet_bot.png" Aspect="AspectFill" BackgroundColor="LightYellow"/>
+                <Image Grid.Row="0" Grid.Column="2" Source="dotnet_bot.png" Aspect="AspectFill" BackgroundColor="LightBlue"/>
+
+                <Image Grid.Row="1" Grid.Column="0" Source="dotnet_bot.png" Aspect="AspectFill" BackgroundColor="LightGreen"/>
+                <Image Grid.Row="1" Grid.Column="1" Source="dotnet_bot.png" Aspect="AspectFill" BackgroundColor="LightGray"/>
+                <Image Grid.Row="1" Grid.Column="2" Source="dotnet_bot.png" Aspect="AspectFill" BackgroundColor="LightCoral"/>
+
+                <Image Grid.Row="2" Grid.Column="0" Source="dotnet_bot.png" Aspect="AspectFill" BackgroundColor="Beige"/>
+                <Image Grid.Row="2" Grid.Column="1" Source="dotnet_bot.png" Aspect="AspectFill" BackgroundColor="Lavender"/>
+                <Image Grid.Row="2" Grid.Column="2" Source="dotnet_bot.png" Aspect="AspectFill" BackgroundColor="MintCream"/>
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
